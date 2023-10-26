@@ -53,16 +53,16 @@ export default function Header() {
             className={`border rounded-lg md:border-none md:static absolute z-10 dark:bg-sky-950 md:min-h-fit min-h-[30vh] left-0 ${menu} md:w-auto w-full flex items-center justify-center px-0 md:px-5`}>
             <ul className="md:space-x-2 flex flex-col md:flex-row text-sky-950 dark:text-gray-200 text-left md:items-center md:gap-[4vw] gap-8 w-full">
               <li className="hover:bg-sky-900 hover:text-gray-100 p-1 text-center rounded">
-                <a href="#sobremim" className="text-sm font-bold">Sobre mim</a>
+                <a href="#sobremim" className="text-sm font-medium">Sobre mim</a>
               </li>
               <li className="hover:bg-sky-900 hover:text-gray-100 p-1 text-center rounded">
-                <a href="#projetos" className="text-sm font-bold">Projetos</a>
+                <a href="#projetos" className="text-sm font-medium">Projetos</a>
               </li>
               <li className="hover:bg-sky-900 hover:text-gray-100 p-1 text-center rounded">
-                <a href="#habilidades" className="text-sm font-bold">Habilidades</a>
+                <a href="#habilidades" className="text-sm font-medium">Habilidades</a>
               </li>
               <li className="hover:bg-sky-900 hover:text-gray-100 p-1 text-center rounded">
-                <a href="#falecomigo" className="text-sm font-bold">Fale
+                <a href="#falecomigo" className="text-sm font-medium">Fale
                   comigo</a>
               </li>
             </ul>
