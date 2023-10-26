@@ -2,26 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+.social-icons{
+    animation: translateY 0.8s infinite alternate;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+@keyframes translateY {
+  from{
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#home .line {
+  border-right: 0.2rem solid #408bd6;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+#home .typing {
+  animation: line-typing 500ms steps(40) infinite normal,
+      typing 2s steps(40) 1.4s normal backwards;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+
+  to {
+      width: 27.5rem;
+  }
+}
+
+@keyframes line-typing {
+  from {
+      border-right-color: #408bd6;
+  }
+
+  to {
+      border-right-color: transparent;
+  }
+}
+
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+
+  to {
+      width: 23.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  @keyframes typing {
+      from {
+          width: 0;
+      }
+  
+      to {
+          width: 15rem;
+      }
+  }
 }
