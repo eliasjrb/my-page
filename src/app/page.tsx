@@ -17,7 +17,7 @@ export default function Home() {
             <p className="font-mono text-sky-950 dark:text-gray-200 text-xl md:text-3xl line typing">Desenvolvedor Web Full-stack.</p>
           </div>
           <div>
-            <Image src="/me.png" width={560} height={750} quality={100} alt="elias braga apresentação" className="w-72 h-72 object-cover rounded-full border-4 border-sky-600 shadow-lg" />
+            <img src="/me.png" width={560} height={750} alt="elias braga apresentação" className="w-72 h-72 object-cover rounded-full border-4 border-sky-600 shadow-lg" />
           </div>
         </div>
       </section>
@@ -25,7 +25,7 @@ export default function Home() {
       <section className="py-10 my-10 " id="sobremim">
         <div
           className="container max-w-5xl p-3 border border-sky-950  dark:border-none rounded-lg mx-auto w-full h-full flex flex-col md:flex-row items-center md:justify-center">
-          <Image src="/eliasbraga.jpg" width={720} height={970} quality={100} className="rounded-lg w-96 object-cover" alt="Elias Braga sobre mim" data-aos="fade-right"
+          <img src="/eliasbraga.jpg" width={720} height={970} className="rounded-lg w-96 object-cover" alt="Elias Braga sobre mim" data-aos="fade-right"
             data-aos-delay="100" />
 
           <div className="ml-5">

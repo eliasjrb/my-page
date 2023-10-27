@@ -25,7 +25,7 @@ const Projeto = ({ projeto }:any) => {
                     <div className="w-full md:w-2/5 pt-1">
                         <Link href={projeto.url} target="_blank">
                             <div>
-                                <Image src={projeto.img} width={100} height={100} className="w-full object-cover" alt={`Gif animado projeto ${projeto.textHead}`} />
+                                <img src={projeto.img} width={100} height={100} className="w-full object-cover" alt={`Gif animado projeto ${projeto.textHead}`} />
                             </div>
                         </Link>
                     </div>

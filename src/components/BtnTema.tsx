@@ -25,7 +25,7 @@ export default function BtnTema({props}: any) {
   return (
     temas === 'dark' ? (
         <div onClick={mudarTema} className={`
-        hidden sm:flex items-center justify-end cursor-pointer
+        flex items-center justify-end cursor-pointer
         bg-gradient-to-r from-gray-600 to-gray-900
          w-14 h-8 p-1 rounded-full`
         }>
@@ -38,7 +38,7 @@ export default function BtnTema({props}: any) {
         </div>
     ) : (
       <div onClick={mudarTema} className={`
-        hidden sm:flex items-center cursor-pointer
+        flex items-center cursor-pointer
         bg-gradient-to-r from-sky-600 to-sky-300
          w-14 h-8 p-1 rounded-full`
         }>
