@@ -18,7 +18,6 @@ export default function RootLayout({
   return (
     <html lang="pt-br" id="tema" className='dark scroll-smooth'>
       <body className={`${inter.className} bg-gray-100 text-gray-700 dark:bg-sky-950 dark:text-gray-200`}>
-        <Header />
         {children}
       </body>
     </html>

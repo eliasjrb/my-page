@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaBars } from "react-icons/fa6";
 
 export default function FaleComigo() {
   return (
@@ -8,7 +7,7 @@ export default function FaleComigo() {
       <div className="container flex max-w-5xl mx-auto px-4">
             <div className="flex flex-col text-center w-full space-y-10">
                 <h1 className="text-2xl md:text-3xl mb-1 md:mb-7">Fale Comigo!</h1>
-                <form className="w-full md:w-2/3 md:mx-auto space-y-2 text-gray-600"
+                <form className="w-full md:w-2/3 border shadow-xl p-5 rounded-lg md:mx-auto space-y-2 text-gray-600"
                     action="https://api.staticforms.xyz/submit" method="post">
                     <input id="name" className="w-full p-1 rounded-lg " required type="text" name="name" placeholder="Seu nome "
                         data-aos="fade-right" data-aos-delay="100" />

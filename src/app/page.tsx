@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Projeto from '@/components/Projeto';
 import Stack from '@/components/Stack';
@@ -8,6 +9,8 @@ import { FaAngleUp } from "react-icons/fa6";
 export default function Home() {
   return (
     <>
+      <Header />
+
       <section className=" mx-auto py-10 my-10 h-[70vh] md:h-[78vh]" id="home">
         <div
           className="container max-w-5xl mx-auto h-full flex flex-col flex-col-reverse  items-center md:flex-row md:justify-between">
@@ -17,15 +20,15 @@ export default function Home() {
             <p className="font-mono text-sky-950 dark:text-gray-200 text-xl md:text-3xl line typing">Desenvolvedor Web Full-stack.</p>
           </div>
           <div>
-            <img src="/me.png" width={560} height={750} alt="elias braga apresentação" className="w-72 h-72 object-cover rounded-full border-4 border-sky-600 shadow-lg" />
+            <img src="/img/me.png" width={560} height={750} alt="elias braga apresentação" className="w-72 h-72 object-cover rounded-full border-4 border-sky-600 shadow-lg" />
           </div>
         </div>
       </section>
 
       <section className="py-10 my-10 " id="sobremim">
         <div
-          className="container max-w-5xl p-3 border border-sky-950  dark:border-none rounded-lg mx-auto w-full h-full flex flex-col md:flex-row items-center md:justify-center">
-          <img src="/eliasbraga.jpg" width={720} height={970} className="rounded-lg w-96 object-cover" alt="Elias Braga sobre mim" data-aos="fade-right"
+          className="container max-w-5xl p-3 border shadow-xl  dark:border-none rounded-lg mx-auto w-full h-full flex flex-col md:flex-row items-center md:justify-center">
+          <img src="/img/eliasbraga.jpg" width={720} height={970} className="rounded-lg w-96 object-cover" alt="Elias Braga sobre mim" data-aos="fade-right"
             data-aos-delay="100" />
 
           <div className="ml-5">
@@ -54,7 +57,7 @@ export default function Home() {
 
           <Projeto projeto={{
             url: "https://ebgame.vercel.app",
-            img: "/ebgame.gif",
+            img: "/img/ebgame.gif",
             nextRight: true,
             textHead: "EB Games",
             textBody: `A aplicação desenvolvida com JavaScript, Next.js, React e
@@ -70,18 +73,18 @@ export default function Home() {
               também
               uma base sólida para futuros desenvolvimentos inovadores no mundo da web.`,
             stacks: [
-              { name: "javascript", url: "/javascript.svg", class: "w-10 h-10" },
-              { name: "react", url: "/react-logo.png", class: "w-10 h-10" },
-              { name: "next js", url: "/nextjs-logo.png", class: "w-10 h-10" },
-              { name: "html 5", url: "/html-logo.png", class: "w-10 h-10" },
-              { name: "css 3", url: "/css-logo.png", class: "w-10 h-10" },
-              { name: "tailwind css", url: "/tailwind-logo.png", class: "w-10 h-10" },
+              { name: "javascript", url: "/img/javascript.svg", class: "w-10 h-10" },
+              { name: "react", url: "/img/react-logo.png", class: "w-10 h-10" },
+              { name: "next js", url: "/img/nextjs-logo.png", class: "w-10 h-10" },
+              { name: "html 5", url: "/img/html-logo.png", class: "w-10 h-10" },
+              { name: "css 3", url: "/img/css-logo.png", class: "w-10 h-10" },
+              { name: "tailwind css", url: "/img/tailwind-logo.png", class: "w-10 h-10" },
             ],
           }} />
 
           <Projeto projeto={{
             url: "https://api-pokemon-gules.vercel.app",
-            img: "/pokedex.gif",
+            img: "/img/pokedex.gif",
             nextRight: false,
             textHead: "Poke Dex",
             textBody: `Nesta jornada, mergulhei nas nuances do desenvolvimento web, explorando Next.js, React e 
@@ -93,17 +96,17 @@ export default function Home() {
               programação. Estou ansioso para aplicar essas habilidades em projetos futuros, sabendo que
               cada desafio é uma oportunidade de crescimento e aprimoramento.`,
             stacks: [
-              { name: "javascript", url: "/javascript.svg", class: "w-10 h-10" },
-              { name: "react", url: "/react-logo.png", class: "w-10 h-10" },
-              { name: "next js", url: "/nextjs-logo.png", class: "w-10 h-10" },
-              { name: "html 5", url: "/html-logo.png", class: "w-10 h-10" },
-              { name: "tailwind css", url: "/tailwind-logo.png", class: "w-10 h-10" },
+              { name: "javascript", url: "/img/javascript.svg", class: "w-10 h-10" },
+              { name: "react", url: "/img/react-logo.png", class: "w-10 h-10" },
+              { name: "next js", url: "/img/nextjs-logo.png", class: "w-10 h-10" },
+              { name: "html 5", url: "/img/html-logo.png", class: "w-10 h-10" },
+              { name: "tailwind css", url: "/img/tailwind-logo.png", class: "w-10 h-10" },
             ],
           }} />
 
           <Projeto projeto={{
             url: "https://quiz-delta-five.vercel.app",
-            img: "/quiz.gif",
+            img: "/img/quiz.gif",
             textHead: "Quiz",
             nextRight: true,
             textBody: `O desenvolvimento de uma aplicação quiz com JavaScript,
@@ -113,18 +116,18 @@ export default function Home() {
             estilização elegante do Tailwind CSS para criar uma aplicação que é não apenas educativa,
             mas também agradável de usar.`,
             stacks: [
-              { name: "javascript", url: "/javascript.svg", class: "w-10 h-10" },
-              { name: "react", url: "/react-logo.png", class: "w-10 h-10" },
-              { name: "next js", url: "/nextjs-logo.png", class: "w-10 h-10" },
-              { name: "html 5", url: "/html-logo.png", class: "w-10 h-10" },
-              { name: "css 3", url: "/css-logo.png", class: "w-10 h-10" },
-              { name: "tailwind css", url: "/tailwind-logo.png", class: "w-10 h-10" },
+              { name: "javascript", url: "/img/javascript.svg", class: "w-10 h-10" },
+              { name: "react", url: "/img/react-logo.png", class: "w-10 h-10" },
+              { name: "next js", url: "/img/nextjs-logo.png", class: "w-10 h-10" },
+              { name: "html 5", url: "/img/html-logo.png", class: "w-10 h-10" },
+              { name: "css 3", url: "/img/css-logo.png", class: "w-10 h-10" },
+              { name: "tailwind css", url: "/img/tailwind-logo.png", class: "w-10 h-10" },
             ],
           }} />
 
           <Projeto projeto={{
             url: "https://rondoniatemtudo.sistemas.ro.gov.br",
-            img: "/rondoniatemtudo.gif",
+            img: "/img/rondoniatemtudo.gif",
             textHead: "Rondônia tem tudo",
             nextRight: false,
             textBody: `A aplicação desenvolvida com HTML5, JavaScript, CSS e
@@ -135,14 +138,14 @@ export default function Home() {
               poderosa,
               responsiva e altamente funcional, proporcionando aos usuários uma experiência excepcional.`,
             stacks: [
-              { name: "javascript", url: "/csharp-logo.png", class: "w-10 h-10" },
-              { name: "react", url: "/net-logo.png", class: "w-10 h-10" },
-              { name: "next js", url: "/javascript.svg", class: "w-10 h-10" },
-              { name: "html 5", url: "/html-logo.png", class: "w-10 h-10" },
-              { name: "css 3", url: "/css-logo.png", class: "w-10 h-10" },
-              { name: "tailwind css", url: "/bootstrap-logo.png", class: "w-10 h-10" },
-              { name: "tailwind css", url: "/sql-server-logo.png", class: "w-10 h-10" },
-              { name: "tailwind css", url: "/docker-logo.png", class: "w-10 h-10" },
+              { name: "javascript", url: "/img/csharp-logo.png", class: "w-10 h-10" },
+              { name: "react", url: "/img/net-logo.png", class: "w-10 h-10" },
+              { name: "next js", url: "/img/javascript.svg", class: "w-10 h-10" },
+              { name: "html 5", url: "/img/html-logo.png", class: "w-10 h-10" },
+              { name: "css 3", url: "/img/css-logo.png", class: "w-10 h-10" },
+              { name: "tailwind css", url: "/img/bootstrap-logo.png", class: "w-10 h-10" },
+              { name: "tailwind css", url: "/img/sql-server-logo.png", class: "w-10 h-10" },
+              { name: "tailwind css", url: "/img/docker-logo.png", class: "w-10 h-10" },
             ],
           }} />
 
@@ -154,20 +157,20 @@ export default function Home() {
         <div className="container max-w-5xl mx-auto px-4">
           <h3 className="text-2xl md:text-5xl  text-center text-sky-950 dark:text-gray-200 font-semibold mb-8">Habilidades</h3>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-5">
-            <Stack stack={{ name: "csharp", url: "/csharp-logo.png", class: "w-24 h-24" }} />
-            <Stack stack={{ name: ".net", url: "/net-logo.png", class: "w-24 h-24" }} />
-            <Stack stack={{ name: "javascript", url: "/javascript.svg", class: "w-24 h-24" }} />
-            <Stack stack={{ name: "react", url: "/react-logo.png", class: "w-24 h-24" }} />
-            <Stack stack={{ name: "next js", url: "/nextjs-logo.png", class: "w-24 h-24" }} />
-            <Stack stack={{ name: "html 5", url: "/html-logo.png", class: "w-24 h-24" }} />
-            <Stack stack={{ name: "css 3", url: "/css-logo.png", class: "w-24 h-24" }} />
-            <Stack stack={{ name: "tailwind css", url: "/tailwind-logo.png", class: "w-24 h-24" }} />
-            <Stack stack={{ name: "bootstrap", url: "/bootstrap-logo.png", class: "w-24 h-24" }} />
-            <Stack stack={{ name: "docker", url: "/docker-logo.png", class: "w-24 h-24" }} />
-            <Stack stack={{ name: "scrum", url: "/scrum-logo.png", class: "w-24 h-24" }} />
-            <Stack stack={{ name: "sql server", url: "/sql-server-logo.png", class: "w-24 h-24" }} />
-            <Stack stack={{ name: "mysql", url: "/mysql-logo.png", class: "w-24 h-24" }} />
-            <Stack stack={{ name: "git", url: "/git-logo.png", class: "w-24 h-24" }} />
+            <Stack stack={{ name: "csharp", url: "/img/csharp-logo.png", class: "w-24 h-24" }} />
+            <Stack stack={{ name: ".net", url: "/img/net-logo.png", class: "w-24 h-24" }} />
+            <Stack stack={{ name: "javascript", url: "/img/javascript.svg", class: "w-24 h-24" }} />
+            <Stack stack={{ name: "react", url: "/img/react-logo.png", class: "w-24 h-24" }} />
+            <Stack stack={{ name: "next js", url: "/img/nextjs-logo.png", class: "w-24 h-24" }} />
+            <Stack stack={{ name: "html 5", url: "/img/html-logo.png", class: "w-24 h-24" }} />
+            <Stack stack={{ name: "css 3", url: "/img/css-logo.png", class: "w-24 h-24" }} />
+            <Stack stack={{ name: "tailwind css", url: "/img/tailwind-logo.png", class: "w-24 h-24" }} />
+            <Stack stack={{ name: "bootstrap", url: "/img/bootstrap-logo.png", class: "w-24 h-24" }} />
+            <Stack stack={{ name: "docker", url: "/img/docker-logo.png", class: "w-24 h-24" }} />
+            <Stack stack={{ name: "scrum", url: "/img/scrum-logo.png", class: "w-24 h-24" }} />
+            <Stack stack={{ name: "sql server", url: "/img/sql-server-logo.png", class: "w-24 h-24" }} />
+            <Stack stack={{ name: "mysql", url: "/img/mysql-logo.png", class: "w-24 h-24" }} />
+            <Stack stack={{ name: "git", url: "/img/git-logo.png", class: "w-24 h-24" }} />
           </div>
         </div>
       </section>
@@ -183,10 +186,10 @@ export default function Home() {
 
       <div className="fixed flex gap-2 bottom-4 left-4">
         <a href="https://linkedin.com/in/eliasbragaeb" title="LinkedIn" target="_blank">
-            <Image src="/linkedin.svg" width={200} height={200} className="w-8 h-8 social-icons" alt="logo linkedin" />
+            <Image src="/img/linkedin.svg" width={200} height={200} className="w-8 h-8 social-icons" alt="logo linkedin" />
         </a>
         <a href="https://github.com/eliasjrb" title="Github" target="_blank">
-            <Image src="/github.svg" width={200} height={200} className="w-8 h-8 social-icons" alt="logo github" />
+            <Image src="/img/github.svg" width={200} height={200} className="w-8 h-8 social-icons" alt="logo github" />
         </a>
     </div>
     </>

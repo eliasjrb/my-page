@@ -8,7 +8,7 @@ export default function Header() {
         <div className="bg-sky-600 dark:bg-transparent border border-sky-950 hover:border-1 hover:border-sky-600 hover:bg-sky-800 rounded-full">
           <a href="#top" className="rounded-full">
             <Image
-              src="/eb-logo.svg"
+              src="/img/eb-logo.svg"
               alt="Eu home"
               className=" rounded-lg object-cover"
               width={56}

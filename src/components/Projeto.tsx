@@ -35,7 +35,6 @@ const Projeto = ({ projeto }:any) => {
                     </div>
                 </div>
                 <div className="flex justify-center w-full md:justify-start gap-3">
-                  {/* {console.log(projeto.stacks)} */}
                     {projeto.stacks.map( (x: stackPros) => {
                       return ( <Stack key={x.url} stack={x} />)
                     })}
