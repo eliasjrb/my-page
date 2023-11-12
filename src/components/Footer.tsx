@@ -1,6 +1,14 @@
 import Image from "next/image"
 
-export default function Header() {
+interface IFaleComigoProps {
+  props: {
+      titulo: string;
+      subTitulo: string;
+  }
+}
+
+export default function Header({props}:IFaleComigoProps) {
+  const data = '©' + new Date().getFullYear()
   return (
     <footer className="border-t border-sky-950 dark:border-gray-200 mt-10">
       <div className="container max-w-5xl mx-auto p-4 h-30 w-full flex flex-col justify-center items-center"
@@ -19,8 +27,8 @@ export default function Header() {
           </a>
         </div>
         <div className="text-center text-sky-950 dark:text-gray-200">
-          <span id="data-cop"></span> por Elias Braga. <br />
-          Todos os direitos reservados.
+          <span id="data-cop">{data}</span> {props.titulo} <br />
+          {props.subTitulo}
         </div>
       </div>
     </footer>
