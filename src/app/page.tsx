@@ -85,7 +85,7 @@ export default function Home() {
           <Projeto projeto={{
             url: "https://api-pokemon-gules.vercel.app",
             img: "/img/pokedex.gif",
-            nextRight: false,
+            nextRight: true,
             textHead: "Poke Dex",
             textBody: `Nesta jornada, mergulhei nas nuances do desenvolvimento web, explorando Next.js, React e 
               Tailwind CSS. A aplicação didática não apenas expandiu minha compreensão sobre o consumo de
@@ -129,7 +129,7 @@ export default function Home() {
             url: "https://rondoniatemtudo.sistemas.ro.gov.br",
             img: "/img/rondoniatemtudo.gif",
             textHead: "Rondônia tem tudo",
-            nextRight: false,
+            nextRight: true,
             textBody: `A aplicação desenvolvida com HTML5, JavaScript, CSS e
               Bootstrap 5 no front-end, combinados
               com C# e .NET Core no back-end, representa o estado da arte no mundo do desenvolvimento web.

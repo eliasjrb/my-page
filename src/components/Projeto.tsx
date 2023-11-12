@@ -20,7 +20,7 @@ interface stackPros {
 const Projeto = ({ projeto }:any) => {
   return (
     <>
-      <div className="flex flex-col gap-5 mb-10 pb-5 border-b border-sky-950 border-sky-700" >
+      <div className="flex flex-col gap-5 mb-10 pb-5 border-b border-sky-950  dark:border-gray-200 border-sky-700" >
                 <div className={`block md:flex space-y-4  md:space-y-1 gap-5 w-full ${projeto.nextRight === false ? "md:flex-row-reverse" : ""}`}>
                     <div className="w-full md:w-2/5 pt-1">
                         <Link href={projeto.url} target="_blank">
